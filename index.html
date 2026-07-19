@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bardia Sheikh — One of a Kind</title>
+
+<!-- Google Fonts: mixed type system for cinematic/cyber/luxury tone -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;600;800&family=Playfair+Display:ital,wght@0,500;1,500;1,600&family=Caveat:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background canvas layer: drifting particles + glow field -->
+<canvas id="dust-canvas"></canvas>
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- floating theme toggle -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme">
+  <span class="toggle-track">
+    <span class="toggle-thumb"></span>
+  </span>
+  <span class="toggle-icon sun" aria-hidden="true">☀</span>
+  <span class="toggle-icon moon" aria-hidden="true">☾</span>
+</button>
+
+<!-- nav -->
+<nav class="nav">
+  <span class="nav-mark">B<span class="accent">.</span>S</span>
+  <ul class="nav-links">
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#mindset" class="nav-link">Mindset</a></li>
+    <li><a href="#quotes" class="nav-link">Words</a></li>
+    <li><a href="#badasses" class="nav-link">Badasses</a></li>
+    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="hero">
+  <p class="eyebrow reveal">— A LEGACY IN MOTION —</p>
+  <h1 class="hero-title" data-text="Sheikh is one of the kind">
+    <span class="glitch-layer" aria-hidden="true">Sheikh is one of the kind</span>
+    <span class="glitch-layer" aria-hidden="true">Sheikh is one of the kind</span>
+    <span class="glitch-main">Sheikh is one of the kind</span>
+  </h1>
+  <p class="hero-subtitle reveal">Bardia Sheikh</p>
+
+  <p class="quote quote--glow quote--orbitron hero-quote reveal">
+    "There is no one better than Bardia."
+  </p>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span class="scroll-text">KEEP MOVING</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <p class="eyebrow reveal">01 — THE MAN</p>
+      <h2 class="section-title reveal">Built in silence.<br>Proven in results.</h2>
+
+      <p class="quote quote--serif quote--tilt reveal">
+        <em>"Legends don't compete."</em>
+      </p>
+
+      <p class="body-text reveal">
+        Some people chase attention. Bardia builds things that speak for themselves —
+        quietly, precisely, relentlessly. Every move calculated. Every result earned.
+        This is not a story about luck. It's a story about discipline turned into legend.
+      </p>
+
+      <p class="quote quote--hand quote--rotate reveal">Built differently.</p>
+    </div>
+  </section>
+
+  <!-- ============ MINDSET ============ -->
+  <section class="section mindset" id="mindset">
+    <p class="watermark" aria-hidden="true">Dream. Build. Repeat.</p>
+
+    <div class="section-inner">
+      <p class="eyebrow reveal">02 — THE MINDSET</p>
+      <h2 class="section-title reveal">Discipline is the only currency that never devalues.</h2>
+
+      <p class="quote quote--serif quote--big reveal">
+        "The future belongs to those who create it."
+      </p>
+
+      <div class="mindset-grid">
+        <div class="mindset-card reveal">
+          <span class="card-icon">◆</span>
+          <h3>Focus</h3>
+          <p>No noise. No distractions. Just the work, sharpened daily.</p>
+        </div>
+        <div class="mindset-card reveal">
+          <span class="card-icon">◆</span>
+          <h3>Power</h3>
+          <p>Quiet strength that doesn't need to announce itself.</p>
+        </div>
+        <div class="mindset-card reveal">
+          <span class="card-icon">◆</span>
+          <h3>Vision</h3>
+          <p>Seeing three moves ahead while others react to the last one.</p>
+        </div>
+      </div>
+
+      <p class="quote quote--hand corner-quote reveal">Stay dangerous.</p>
+    </div>
+  </section>
+
+  <!-- ============ QUOTES ============ -->
+  <section class="section quotes-section" id="quotes">
+    <div class="section-inner">
+      <p class="eyebrow reveal">03 — WORDS TO LIVE BY</p>
+      <h2 class="section-title reveal">Fragments of a philosophy.</h2>
+
+      <div class="quotes-grid">
+        <p class="quote quote--card quote--bebas reveal">Never average.</p>
+        <p class="quote quote--card quote--serif reveal"><em>Strength is silent.</em></p>
+        <p class="quote quote--card quote--orbitron reveal">Respect is earned.</p>
+        <p class="quote quote--card quote--hand reveal">Born to inspire.</p>
+        <p class="quote quote--card quote--inter reveal">Success loves discipline.</p>
+        <p class="quote quote--vertical reveal" aria-label="Fear nothing.">Fear nothing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BADASSES ============ -->
+  <section class="section badasses" id="badasses">
+    <p class="watermark watermark--glow" aria-hidden="true">Nothing can stop Bardia.</p>
+
+    <div class="section-inner">
+      <p class="eyebrow reveal">04 — THE ICONS</p>
+      <h2 class="section-title reveal">Greatness is a habit.</h2>
+      <p class="body-text reveal">The names that defined relentlessness. The energy Bardia channels every single day.</p>
+
+      <div class="badasses-gallery">
+
+        <article class="hero-card reveal">
+          <div class="card-glass">
+            <div class="card-visual">
+              <svg viewBox="0 0 200 240" class="silhouette" aria-hidden="true">
+                <defs>
+                  <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--glow-purple)"/>
+                    <stop offset="100%" stop-color="var(--glow-cyan)"/>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#g1)" d="M100 20c25 0 42 20 42 45 0 18-8 30-18 38 30 10 52 34 56 68 3 24-2 42-2 42H22s-5-18-2-42c4-34 26-58 56-68-10-8-18-20-18-38 0-25 17-45 42-45z"/>
+              </svg>
+            </div>
+            <div class="card-caption">
+              <h3>Sylvester Stallone</h3>
+              <span>The Underdog Icon</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-card reveal">
+          <div class="card-glass">
+            <div class="card-visual">
+              <svg viewBox="0 0 200 240" class="silhouette" aria-hidden="true">
+                <path fill="url(#g1)" d="M100 20c25 0 42 20 42 45 0 18-8 30-18 38 30 10 52 34 56 68 3 24-2 42-2 42H22s-5-18-2-42c4-34 26-58 56-68-10-8-18-20-18-38 0-25 17-45 42-45z"/>
+              </svg>
+            </div>
+            <div class="card-caption">
+              <h3>Jesse Pinkman</h3>
+              <span>Chaos with a Conscience</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-card reveal">
+          <div class="card-glass">
+            <div class="card-visual">
+              <svg viewBox="0 0 200 240" class="silhouette" aria-hidden="true">
+                <path fill="url(#g1)" d="M100 20c25 0 42 20 42 45 0 18-8 30-18 38 30 10 52 34 56 68 3 24-2 42-2 42H22s-5-18-2-42c4-34 26-58 56-68-10-8-18-20-18-38 0-25 17-45 42-45z"/>
+              </svg>
+            </div>
+            <div class="card-caption">
+              <h3>Walter White</h3>
+              <span>The Transformation</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-card reveal">
+          <div class="card-glass">
+            <div class="card-visual">
+              <svg viewBox="0 0 200 240" class="silhouette" aria-hidden="true">
+                <path fill="url(#g1)" d="M100 20c25 0 42 20 42 45 0 18-8 30-18 38 30 10 52 34 56 68 3 24-2 42-2 42H22s-5-18-2-42c4-34 26-58 56-68-10-8-18-20-18-38 0-25 17-45 42-45z"/>
+              </svg>
+            </div>
+            <div class="card-caption">
+              <h3>Apollo Creed</h3>
+              <span>Born a Champion</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="section-inner">
+      <p class="eyebrow reveal">05 — MOMENTS</p>
+      <h2 class="section-title reveal">Every frame tells a story.</h2>
+
+      <p class="quote quote--hand quote--tilt-alt reveal">Make your own legacy.</p>
+
+      <div class="moments-grid">
+        <div class="moment-card reveal"><span class="moment-num">I</span><h4>Focus</h4></div>
+        <div class="moment-card reveal"><span class="moment-num">II</span><h4>Power</h4></div>
+        <div class="moment-card reveal"><span class="moment-num">III</span><h4>Rise</h4></div>
+        <div class="moment-card reveal"><span class="moment-num">IV</span><h4>Legacy</h4></div>
+      </div>
+
+      <p class="quote quote--tiny" aria-hidden="true">stay hungry.</p>
+
+      <button class="badasses-btn" id="badasses-btn">
+        <span>BADASSES</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ FINAL MOTIVATION ============ -->
+  <section class="section final" id="final">
+    <div class="section-inner center">
+      <p class="eyebrow reveal">06 — THE FINAL WORD</p>
+      <p class="quote quote--serif quote--final reveal">
+        "Create your own future."
+      </p>
+      <h2 class="final-title reveal">Impossible is temporary.<br><span class="accent-text">Bardia is permanent.</span></h2>
+      <p class="quote quote--orbitron quote--neon reveal">One of one.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <p class="quote quote--hand quote--footer-tilt reveal">Impossible is temporary.</p>
+  <p class="footer-text">Designed for <span class="glow-text">Bardia Sheikh</span></p>
+  <p class="footer-sub">© 2026 — All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
